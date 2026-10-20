@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "crowds.html",
+    "href": "crowds.html",
+    "title": "Crowds and Champions",
+    "section": "",
+    "text": "Figure 1 refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.\n\nplt.plot(cups[\"year\"], cups[\"attendance_k\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Total attendance (thousands)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Total World Cup Attendance Over Time (thousands)\n\n\n\n\n\nThe dataset covers 22 tournaments, and Brazil won 5 of them."
+  },
+  {
+    "objectID": "crowds.html#attendance-over-time",
+    "href": "crowds.html#attendance-over-time",
+    "title": "Crowds and Champions",
+    "section": "",
+    "text": "Figure 1 refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.\n\nplt.plot(cups[\"year\"], cups[\"attendance_k\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Total attendance (thousands)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Total World Cup Attendance Over Time (thousands)\n\n\n\n\n\nThe dataset covers 22 tournaments, and Brazil won 5 of them."
+  },
+  {
+    "objectID": "goals.html",
+    "href": "goals.html",
+    "title": "Matches and Goals",
+    "section": "",
+    "text": "We use Figure 1 to plot number of matches played at each World Cup with thetotal goals scored. Graphically, we can see that the tournaments with more matches typically have more goals, suggesting a higher chance to score with every additional match played.\n\nplt.scatter(cups[\"matches\"], cups[\"goals\"])\nplt.xlabel(\"# of matches played\")\nplt.ylabel(\"# of total goals scored\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Matches Played vs. Total Goals Scored/World Cup (1930 to 2022)"
+  },
+  {
+    "objectID": "goals.html#matches-vs.-goals-plotted",
+    "href": "goals.html#matches-vs.-goals-plotted",
+    "title": "Matches and Goals",
+    "section": "",
+    "text": "We use Figure 1 to plot number of matches played at each World Cup with thetotal goals scored. Graphically, we can see that the tournaments with more matches typically have more goals, suggesting a higher chance to score with every additional match played.\n\nplt.scatter(cups[\"matches\"], cups[\"goals\"])\nplt.xlabel(\"# of matches played\")\nplt.ylabel(\"# of total goals scored\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Matches Played vs. Total Goals Scored/World Cup (1930 to 2022)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "World Cup Numbers",
+    "section": "",
+    "text": "Introduction\nWe all know FIFA is one of the biggest sporting events in the world. Working with a sports newsletter, we are creating a small public website to share the history of the men’s FIFA World Cup.\nSome of the pages that we will be looking at includes:\n\nMatches and Goals: how the number of matches and goals has changed over time\nCrowds and Champions: attendance at each tournament and who won\n\nAI tools that I used: None. I main use lecture notes, qtm 151 and prior assignments as reference. However, to make sure everything is accurate prior to executing, I entered everything in an ipynb environment first. I had a lot of issues debugging prior and I don’t want that to be the case."
+  }
+]
