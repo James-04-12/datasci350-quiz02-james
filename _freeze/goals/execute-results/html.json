@@ -1,0 +1,12 @@
+{
+  "hash": "ff2f555d81ef61357c6ec57e7a0b7b87",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Matches and Goals\"\njupyter: python3\n---\n\n\n## Matches vs. Goals: Plotted\n\nWe use @fig-matches-goals-plotted to plot number of matches played at each World Cup with thetotal goals scored. Graphically, we can see that the tournaments with more matches typically have more goals, suggesting a higher chance to score with every additional match played.\n\n::: {#cell-fig-matches-goals-plotted .cell execution_count=2}\n``` {.python .cell-code}\nplt.scatter(cups[\"matches\"], cups[\"goals\"])\nplt.xlabel(\"# of matches played\")\nplt.ylabel(\"# of total goals scored\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Matches Played vs. Total Goals Scored/World Cup (1930 to 2022)](goals_files/figure-html/fig-matches-goals-plotted-output-1.png){#fig-matches-goals-plotted width=593 height=429}\n:::\n:::\n\n\n",
+    "supporting": [
+      "goals_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

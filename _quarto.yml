@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "World Cup Numbers"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: goals.qmd
+        text: Matches and Goals
+      - href: crowds.qmd
+        text: Crowds and Champions
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
+

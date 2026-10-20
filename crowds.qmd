@@ -1,0 +1,39 @@
+---
+title: "Crowds and Champions"
+jupyter: python3
+---
+
+```{python}
+#| label: load-data
+#| include: false
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+cups = pd.read_csv("worldcups.csv")
+```
+
+```{python}
+#| label: brazil-titles
+#| include: false
+
+#sort by year; keeping only tournaments Brazil won
+cups = cups.sort_values("year")
+brazil = cups[cups["winner"] == "Brazil"]
+```
+
+## Attendance Over Time
+
+@fig-attendance-over-time refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.
+
+```{python}
+#| label: fig-attendance-over-time
+#| fig-cap: "Total World Cup Attendance Over Time (thousands)"
+
+plt.plot(cups["year"], cups["attendance_k"])
+plt.xlabel("Year")
+plt.ylabel("Total attendance (thousands)")
+plt.show()
+```
+
+The dataset covers `{python} len(cups)` tournaments, and Brazil won `{python} len(brazil)` of them.

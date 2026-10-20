@@ -1,0 +1,12 @@
+{
+  "hash": "9214fdce1fa7cfaec9fdd204940c8be0",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Crowds and Champions\"\njupyter: python3\n---\n\n\n\n## Attendance Over Time\n\n@fig-attendance-over-time refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.\n\n::: {#cell-fig-attendance-over-time .cell execution_count=3}\n``` {.python .cell-code}\nplt.plot(cups[\"year\"], cups[\"attendance_k\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Total attendance (thousands)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Total World Cup Attendance Over Time (thousands)](crowds_files/figure-html/fig-attendance-over-time-output-1.png){#fig-attendance-over-time width=602 height=429}\n:::\n:::\n\n\nThe dataset covers 22 tournaments, and Brazil won 5 of them.\n\n",
+    "supporting": [
+      "crowds_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
