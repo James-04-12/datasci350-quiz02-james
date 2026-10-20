@@ -11,4 +11,4 @@ Some of the pages that we will be looking at includes:
 - [Matches and Goals](goals.qmd): how the number of matches and goals has changed over time
 - [Crowds and Champions](crowds.qmd): attendance at each tournament and who won
 
-AI tools that I used: I main use lecture notes, qtm 151 and prior assignments as reference. However, to make sure everything is accurate prior to executing, I used Claude's free version to check if my code is accurate, I had a lot of issues debugging prior and I don't want that to be the case.
+AI tools that I used: None. I main use lecture notes, qtm 151 and prior assignments as reference. However, to make sure everything is accurate prior to executing, I entered everything in an ipynb environment first. I had a lot of issues debugging prior and I don't want that to be the case.
