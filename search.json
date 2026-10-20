@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "crowds.html",
-    "href": "crowds.html",
-    "title": "Crowds and Champions",
+    "objectID": "command.html",
+    "href": "command.html",
+    "title": "Setting up",
     "section": "",
-    "text": "Figure 1 refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.\n\nplt.plot(cups[\"year\"], cups[\"attendance_k\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Total attendance (thousands)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Total World Cup Attendance Over Time (thousands)\n\n\n\n\n\nThe dataset covers 22 tournaments, and Brazil won 5 of them."
+    "text": "gh auth status\ngh auth login\n\ngh repo list\ngit clone https://github.com/James-04-12/datasci350-quiz02-james.git\ncd datasci350-quiz02-james\npwd\nls\n\nTask 1\nExplanation: creating the website in this folder, using ls to check for all files\nquarto create project website\nls -a #list all including hidden files\n\n\nTask 2\necho \"/_site/\" &gt;&gt; .gitignore\necho \"__pycache__/\" &gt;&gt; .gitignore\n#ignoring the two renders since it would change too many things; ensure commit history is clean\n\ncat .gitignore\ngit add .gitignore\ngit commit -m \"Add gitignore\" #new log to track commits (messages for me)\n\ngit status\nls -a\n\n\nTask 3\nrm about.qmd\nls -a\n\ncat _quarto.yml #checking our changes are saved and went thru\nls -a\n\n\nTask 4\ncat _quarto.yml\n\n\nTask 5\ncat index.qmd\n\n\nTask 6\nls -a\ncat goals.qmd\n\n\nTask 7\nls -a\ncat crowds.qmd\n\n\nTask 8\nquarto render #creating the site\n\nls -a\nls _freeze #checking where Quarto saved my code results\n\ngit add .\ngit commit -m \"Add site pages and freeze\"\n\ngit status\nls -a\n\n\nTask 9\nquarto publish gh-pages #renders the site while pushing to a branch on my fork. this keeps my main branch render free (lecture 11)\nsite can be checked via https://james-04-12.github.io/datasci350-quiz02-james/\n\n\nTask 10\nmv ../Quizzes/Quiz02.ipynb command.ipynb\n\nls -a\ngit add command.ipynb\ngit commit -m \"Add command log, used ipynb instead of txt\"\ngit push\ngit status\n\n\nBonus\nquarto render\ngit add .\n\ngit commit -m \"Add custom CSS and light/dark themes; reference via Google Gemini\"\ngit push\n\nquarto publish gh-pages\ngit status"
   },
   {
-    "objectID": "crowds.html#attendance-over-time",
-    "href": "crowds.html#attendance-over-time",
-    "title": "Crowds and Champions",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "World Cup Numbers",
     "section": "",
-    "text": "Figure 1 refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.\n\nplt.plot(cups[\"year\"], cups[\"attendance_k\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Total attendance (thousands)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Total World Cup Attendance Over Time (thousands)\n\n\n\n\n\nThe dataset covers 22 tournaments, and Brazil won 5 of them."
+    "text": "Introduction\nWe all know FIFA is one of the biggest sporting events in the world. Working with a sports newsletter, we are creating a small public website to share the history of the men’s FIFA World Cup.\nSome of the pages that we will be looking at includes:\n\nMatches and Goals: how the number of matches and goals has changed over time\nCrowds and Champions: attendance at each tournament and who won\n\nAI tools that I used: None. I main use lecture notes, qtm 151 and prior assignments as reference. However, to make sure everything is accurate prior to executing, I entered everything in an ipynb environment first. I had a lot of issues debugging prior and I don’t want that to be the case. For the bonus tasks, I searched up on Google Gemini for reference."
   },
   {
     "objectID": "goals.html",
@@ -28,10 +28,17 @@
     "text": "We use Figure 1 to plot number of matches played at each World Cup with thetotal goals scored. Graphically, we can see that the tournaments with more matches typically have more goals, suggesting a higher chance to score with every additional match played.\n\nplt.scatter(cups[\"matches\"], cups[\"goals\"])\nplt.xlabel(\"# of matches played\")\nplt.ylabel(\"# of total goals scored\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Matches Played vs. Total Goals Scored/World Cup (1930 to 2022)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "World Cup Numbers",
+    "objectID": "crowds.html",
+    "href": "crowds.html",
+    "title": "Crowds and Champions",
     "section": "",
-    "text": "Introduction\nWe all know FIFA is one of the biggest sporting events in the world. Working with a sports newsletter, we are creating a small public website to share the history of the men’s FIFA World Cup.\nSome of the pages that we will be looking at includes:\n\nMatches and Goals: how the number of matches and goals has changed over time\nCrowds and Champions: attendance at each tournament and who won\n\nAI tools that I used: None. I main use lecture notes, qtm 151 and prior assignments as reference. However, to make sure everything is accurate prior to executing, I entered everything in an ipynb environment first. I had a lot of issues debugging prior and I don’t want that to be the case."
+    "text": "Figure 1 refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.\n\nplt.plot(cups[\"year\"], cups[\"attendance_k\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Total attendance (thousands)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Total World Cup Attendance Over Time (thousands)\n\n\n\n\n\nThe dataset covers 22 tournaments, and Brazil won 5 of them."
+  },
+  {
+    "objectID": "crowds.html#attendance-over-time",
+    "href": "crowds.html#attendance-over-time",
+    "title": "Crowds and Champions",
+    "section": "",
+    "text": "Figure 1 refers toi total attendance at each World Cup (in thousands) from 1930 to 2022.\n\nplt.plot(cups[\"year\"], cups[\"attendance_k\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Total attendance (thousands)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Total World Cup Attendance Over Time (thousands)\n\n\n\n\n\nThe dataset covers 22 tournaments, and Brazil won 5 of them."
   }
 ]
